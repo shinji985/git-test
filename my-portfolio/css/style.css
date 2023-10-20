@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+/* ベースのスタイル
+------------------------------------------ */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  line-height: 1.75;
+  color: #d15f5f;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 0, 0.5),
+    rgba(0, 0, 255, 0.5)
+  ), url(/aaa/my-portfolio/images/112.jpg);
+  background-repeat: repeat;
+  background-size: 120%;
+  overflow-x: hidden;
+
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a,
+a:hover,
+a i {
+  transition: all 0.3s;
+}
+
+h2{
+  color: #000;
+}
+
+h3 {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin:0 auto;
+
+}
+
+@media (min-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+    margin:0 auto;
+  }
+}
+
+ul {
+  list-style: none;
+  text-align: justify;
+}
+
+
+/* コンテナ */
+.container {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  max-width: 67.5rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+@media (min-width: 768px) {
+  .container {
+    padding-top: 1.25rem;
+    padding-bottom: 0.25rem;
+    max-width: 47rem;
+  }
+}
+/*
+-----------私の経歴------*/
+
+.myprofile{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.container .keireki{
+  border:  solid 2px;
+  border-radius: 2rem;
+  padding: 2rem;
+  border-color: aqua;
+}
+
+.container .keireki2{
+  border: solid 2px;
+  border-radius: 2rem;
+  border-color: aqua;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+/*
+-----------サイトA---------*/
+
+.hair-design-title{
+  font-size: 1.5rem;
+  color: honeydew;
+  font-family: math;
+  display: flex ;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hair-design-title h1{
+  margin-bottom: -1.5rem;
+  padding-left: 2rem;
+}
+
+.bi-scissors::before{
+  transform: rotate(-35deg);
+}
+
+.cover{
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+.cover-slick-item{
+  display: flex;
+  justify-content: center;
+}
+
+.section-title{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  background-color: azure;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.timetable {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  font-weight: lighter;
+
+}
+
+.staff-item{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .staff-item {
+    flex-direction: row;
+  }
+}
+
+.staff-item-list{
+  margin: 2rem 0;
+}
+
+.staff img {
+  max-width: 30%;
+}
+
+.map .container{
+  max-width: 47rem;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.address-list{
+  text-align: left;
+}
+
+.footer{
+  color: #000;
+  background-color: azure;
+  margin-top: 3rem;
+}
+
+.footer-sns-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-sns-list-item{
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+}
